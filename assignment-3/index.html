@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Mood Booster</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        #fruitImages {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .fruit-container {
+            text-align: center;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+        .fruit-container:hover {
+            transform: scale(1.05);
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        #moodContainer {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        #moodTitle {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        #moodDescription {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: '🍎';
+            position: absolute;
+            left: 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fruit Mood Booster</h1>
+    <p>Discover how different fruits can uplift your mood! Click on a fruit to experience its emotional impact.</p>
+    
+    <div id="fruitImages">
+        <div class="fruit-container">
+            <img src="images/apple.jpeg" alt="Apple" data-mood="energized">
+            <p>Apple</p>
+        </div>
+        <div class="fruit-container">
+            <img src="images/banana.jpeg" alt="Banana" data-mood="happy">
+            <p>Banana</p>
+        </div>
+        <div class="fruit-container">
+            <img src="images/orange.jpeg" alt="Orange" data-mood="refreshed">
+            <p>Orange</p>
+        </div>
+        <div class="fruit-container">
+            <img src="images/strawberry.jpeg" alt="Strawberry" data-mood="loved">
+            <p>Strawberry</p>
+        </div>
+    </div>
+    
+    <div id="moodContainer">
+        <h2 id="moodTitle">How do you feel?</h2>
+        <p id="moodDescription">Click a fruit to discover your mood!</p>
+    </div>
+    
+    <h3>Fruit Facts</h3>
+    <ul id="fruitFacts">
+        <li>Apples are rich in antioxidants that help reduce the risk of chronic diseases.</li>
+        <li>Bananas can help regulate blood sugar levels and improve digestive health.</li>
+        <li>Oranges are packed with vitamin C, boosting your immune system.</li>
+        <li>Strawberries are low in calories but high in nutrients, including vitamin C and manganese.</li>
+    </ul>
+    
+</body>
+</html>
